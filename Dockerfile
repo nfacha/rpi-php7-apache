@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian
+FROM raspbian/stretch
 RUN echo "deb http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi" > /etc/apt/sources.list
 RUN apt-get update -y
 RUN apt-get remove '^php.*'
